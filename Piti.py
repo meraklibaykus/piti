@@ -3,6 +3,10 @@ from antlr4.InputStream import InputStream
 from MathLexer import MathLexer
 from MathParser import MathParser
 from sympy import *
+from MathParser import MathParser
+from antlr4 import *
+
+class EvalVisitor(MathVisitor):
 
 # input file name
 input_file_name = "matematik_sorulari.txt"
