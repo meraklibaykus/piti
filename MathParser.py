@@ -1,11 +1,12 @@
 # Generated from Math.g4 by ANTLR 4.9.2
 from antlr4 import *
-from MathListener import MathListener
-from MathVisitor import MathVisitor
+from io import StringIO
+from typing.io import TextIO
+from .MathListener import MathListener
+from .MathLexer import MathLexer
+from .MathParser import MathParser
 
-# This class defines a complete generic visitor for a parse tree produced by MathParser.
-
-class MathVisitor(ParseTreeVisitor):
+class MathParser(Parser):
 
     # Visit a parse tree produced by MathParser#expression.
     def visitExpression(self, ctx):
