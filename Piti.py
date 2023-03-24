@@ -48,3 +48,4 @@ with open(input_file_name, "r") as input_file:
                 except Exception as e:
                     # write the error message to the error file
                     error_file.write(str(e) + ": " + line)
+                    input_stream = InputStream(input_string + "\n")
