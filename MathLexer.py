@@ -4,7 +4,7 @@ from MathParser import MathParser
 from sympy import *
 
 # import generated lexer module
-from MathLexer import MathLexer
+from .MathLexer import MathLexer
 
 # input file name
 input_file_name = "matematik_sorulari.txt"
